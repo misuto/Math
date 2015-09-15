@@ -1,0 +1,129 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+
+\title{Matte}
+\author{Jakob Tigerström}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\begin{flushleft}
+\section{Föreläsning 1}
+\subsection{Värdesiffror}
+Ex1: Hur många vädresiffror har talen
+\begin{enumerate}
+  \item 251 3 st
+  \item 0,251 3 st
+  \item 0,001 1 st
+  \item 250 2 eller 3 st\newline
+$ 2,5*10^2 $ 2 st\newline
+$ 2,50*10^2 $ 3 st
+  \item 2500 2,3 eller 4 st
+$ 2,5*10^3 $\newline
+$ 2,50*10^3 $\newline
+$ 2,500*10^3 $
+  \item 250,0 4 st
+\end{enumerate}
+Multiplikation och division: Svara med lika många värdesiffror som det värde som har minst värdesiffror.\newline
+5,22 *3.1 = 16,182 = 16.
+\subsection{Addition och Subtraktion}
+Minst antal decimaler avgör.\newline
+$ 23,52 + 12,4 = 35,92  \approx 35,9 $\newline
+$ 23,56 + 12,4 = 35,96  \approx 36,0 $
+\subsection{Uppskatta storleksordning}
+$ \frac{2,8*10^5}{3,2*10^3} $\newline
+Storleksordningen på svaret är $ 10^2 $
+\section{Föreläsning 2}
+Omskrivning av formler\newline
+Densitet: $ \rho = m/v $\newline
+\paragraph{EX:1}
+Beräkna densiteten för en sten som har volymen $ 12cm^3 $ och väger $ 36 g $.\newline
+$ \rho = \frac{m}{v} = \frac{36}{12} = 3,0g/cm^3 $\newline \newline
+\paragraph{EX:2}
+Beräkna volymen av ett okänt föremål med densiteten $ 0,8g/cm^3 $ och väger $ 24g $.\newline
+$ \rho = \frac{m}{v} $\newline
+$ \rho * V \frac{m}{V} * V $\newline
+$ \frac{\rho * V}{\rho} = m $\newline
+$ V = \frac{m}{\rho} $\newline
+$ V=m/\rho = 24/0,8 = 30cm3 $ \newline
+Hooke lag\newline
+$ F=k*\Delta l $\newline
+F - kraft\newline
+k - fjäderkonstant\newline
+$ \Delta l $ - fjäderns förlägning\newline
+\paragraph{EX:3}
+Bestäm konstanten för en fjäder  som sträcks ut 18cm när den belastas med kraften 37N.\newline
+$ F=k*\Delta l $\newline
+$ \frac{F}{\Delta l} = k $\newline
+$ k = \frac{F}{\Delta l} = \frac{37}{0,18} = 205,55... \approx 2,1*10^2 N/m $\newline
+Formel för rörelse energi: $ w = \frac{mv^2}{2} $\newline
+w - energi(J)\newline
+m - massa(kg)\newline
+h - höjd(m)\newline
+g - gravitationskonstant.9,52m/s2\newline
+v - hastighet(m/s)\newline
+EX4:\newline
+Beräkna rörelseenergin för en bil som väger 1200kg och kör 90km/h\newline
+$ w = \frac{mv^2}{2} = \frac{1200*25^2}{2} = 375000 \approx 4*10^5 J = 400 kJ = 0,4 mJ $\newline
+$ 90km = 90000m $\newline
+$ 1h = 3600s $\newline
+$ \frac{90000}{3600} = \frac{90}{3,6} = 25m/s $\newline
+\newpage
+\section{Föreläsning 3}
+\subsection{Vektorer}
+Storhet som har både \underline{storlek} och \underline{riktning}.\newline
+Storheter där riktningen ej är relevant kallas \underline{skalärer}.\newline
+\textbf{Att skriva vektorer:}\newline
+\textbf{F}, (f)\newline
+\textbf{Att rita vektorer:}\newline
+$ \longrightarrow $\newline
+Pilens riktning är vektorens riktning.\newline
+Pilens längd är vektorens storlek.\newline
+\textbf{Att addera två vektorer:}\newline
+Parallellogrammetoden.\newline
+Polygonmetoden\newline
+Att multiplicera/dividera en vektor med en skalär(ett tal):\newline
+Multiplicera vektorn v(med tak) med talet $ k, k>0 $.\newline
+Sammar riktning ,storleken påverkas av $ k, k<0 $.\newline
+Motsatta riktningen storleken påverkas av k.\newline
+Komposanter(att dela upp en vektor)
+$ (x1;y1)+(x2;y2) = (x1+x2;y1+y2) $
+\newpage
+\section{Föreläsning 4}
+\subsection{Grundläggande algebra och prioriteringsregler}
+När vi beräknar värdet av ett uttryck måste vi ta hänsyn tilll prioriterings reglerna.
+\begin{enumerate}
+  \item Paranteser
+  \item Potenser
+  \item Multiplikation och division
+  \item Addition och division 
+\end{enumerate}
+\paragraph{EX:1}
+$ \underbrace{20/4}_{\text{3}}\underbrace{+8-}_{\text{4}}\underbrace{6*2}_{\text{3}}=\underbrace{5+8}_{\text{3}}\underbrace{-12}_{\text{3}}=1 $\newline
+\paragraph{EX:2}
+$ \underbrace{2*}_{\text{3}}\underbrace{5^3}_{\text{2}}=\underbrace{2*125}_{\text{3}}=250 $
+\paragraph{EX:3}
+$\underbrace{(8+5)}_{\text{1}}\underbrace{^2}_{\text{2}}\underbrace{(16+14)}_{\text{1}}=\underbrace{13^2}_{\text{2}}\underbrace{*30}_{\text{3}}=\underbrace{169*30}_{\text{3}}=5070 $
+
+Addition $ term+term=summa $
+Subtraktion $ term-term=differens $
+Multiplikation $ faktor*faktor=produkt $
+Divistion $ \frac{täljare}{nämnare}=kvot $
+\subsection{Bråkräkning}
+Multiplikation $ \frac{3}{5}*\frac{8}{7}=\frac{24}{35} $\newline
+Täljare multipliceras till en täljare.\newline
+nämnare multipliceras till en nämnare.\newline
+Addition och subtraktion.\newline
+$ \frac{1}{3}+\frac{1}{8}=\frac{8*1}{8*3}+\frac{1*3}{8*3}=\frac{8}{24}+\frac{3}{24}=\frac{11}{24} $
+
+
+
+\end{flushleft}
+\end{document}

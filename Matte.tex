@@ -8,6 +8,7 @@
 \usepackage{soul}
 \usepackage{cancel}
 \usepackage{enumitem}
+\usepackage{graphicx}
 
 
 \title{Matte}
@@ -323,6 +324,7 @@ Jordens folkmängd var år 2008 6,68 miljarder. Tillväxten var då $ 1,2\% $ pe
   $ lg(\frac{9}{6,68} = xlg1,012 $\newline
   $ x = \frac{lg(9/6,68)}{lg1,012} = 24,99 $\newline
   Svar: År 2033 är folkmängden på jorden 9 miljarder.
+  \end{enumerate}
   \subsubsection{EX6}
   I en kärnreaktor bildas bland annat plutonium-239 med en halveringstid på 24000 år.
   \begin{enumerate}
@@ -332,8 +334,38 @@ Jordens folkmängd var år 2008 6,68 miljarder. Tillväxten var då $ 1,2\% $ pe
     $ y = 400*0,5^{x/24000} $\newline
     $ y(100000) = 400*0,5^{100000/24000}\approx22mg $
     Svar: Det är 22 mg plutonium-239 kvar efter 100000 år.
+    \item Hur länge måste man vänta om man vill att mängden plutonium ska gå ner till 1 promille av den ursprungliga mängden?\newline
+    $ y = A*0,5^{x/24000} $\newline
+    A är den ursprungliga mängden och x är antalet år sedan sönderfallets början, y är återstående mängd plutonium-239 vid tiden x år.
+    $ \frac{A}{1000} = A*0,5^{x/24000} $\newline
+    $ lg(\frac{1}{1000}) = lg(0,5^{x/24000}) $\newline
+    $ lg(\frac{1}{1000}) = \frac{x}{24000}lg0,5 $\newline
+    $ 24000lg(1/1000) = xlg0,5 $\newline
+    $ x = \frac{24000lg(1/1000)}{lg0,5} = 240000år $\newline
+    Svar: Det tar 240000 år innan mängden minskat till en promille.
   \end{enumerate}
+\section{Föreläsning 13}
+\subsection{Likformighet}
+Alla kvadrater är likformiga
+\includegraphics{likformighet.eps}\newline
+Dessa rektanglar är likformiga eftersom förhållandet mellan motsvarande sidor är lika.
+\subsubsection{Definition likformighet}
+Motsvarande vinklar är lika stora och förhållandet mellan motsvarande sidor är lika.
 
-\end{enumerate}
+\subsubsection{Likformiga trianglar}
+\includegraphics{likformighet2.eps}\newline
+Man behöver känna till två vinklar i varje triangel för att kunna jämföra dem och se om de är likformiga.
+\subsubsection{Likbelägnavinklar}
+\includegraphics{likbelagna.eps}\newline
+Likbelägna vinklar är lika stora.
+\subsubsection{Transversalsatsen}
+$ \frac{b}{a} = \frac{d}{c} $\newline
+$ \frac{a}{b} = \frac{c}{d} $\newline
+\subsection{Uppgifter}
+\subsubsection{EX1}
+Trianglarna är likformiga. Beräkna $x$ och $y$
+$ \frac{19,0}{12,0} = \frac{24,0}{y} = \frac{32,0}{x} $\newline
+$ y = \frac{19,0}{12,0} = 24,0 $\newline
+$ y = \frac{24,0*12,0}{19,0}\approx15,2cm $
 \end{flushleft}
 \end{document}

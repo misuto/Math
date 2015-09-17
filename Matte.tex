@@ -5,6 +5,9 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage{soul}
+\usepackage{cancel}
+\usepackage{enumitem}
 
 
 \title{Matte}
@@ -272,7 +275,65 @@ $ 2*\log{x} = 8 $\newline\newline
 $ \underbrace{\frac{2*\log{x}}{2}}_{\text{Dividera med 2}} = \underbrace{\frac{8}{2}}_{\text{Dividera med 2}}  $ \newline\newline
 $ \log{x} = 4 $\newline\newline
 Svar: x = 4
+\section{Föreläsning 12}
+\subsection{Uppgifter}
+\subsubsection{EX1}
+$ lgx = 2lg3+4lg2 $\newline
+$ lgx = lg(3^2)+lg(2^4) $\newline
+$ lgx = lg9+lg16 $\newline
+$ lgx = lg(9*16) $\newline
+$ x = 144 $
+\subsubsection{EX2}
+Lös ekvationen:\newline
+$ 2*3^x=4^x $\newline
+$ lg(2*3^x) = lg(4^x) $\newline
+$ lg2+lg(3^x) = xlg4 $\newline
+$ lg2+xlg3 = xlg4 $\newline
+$ lg2 = xlg4-xlg3 $\newline
+$ lg2 = x(lg4-lg3) $\newline
+$ x = \frac{lg2}{lg4-lg3} $
+\subsubsection{EX3 KONTOLLERA}
+Antag att vi vet att $ 10^{0,6}\approx4 $\newline
+Vad är då lg 400?\newline
+$ 10^{0,6}\approx4 $\newline
+$ 10^{0,6}*10^2\approx400 $\newline
+$ 10^{2,6}\approx400 $\newline
+\subsubsection{EX4}
+Lös ekvationen:\newline
+$ lg(x+4)+lg(x+2) = lg(x-1)+lg(x-10) $\newline
+$ lg((x+4)(x+2)) = lg((x-1)(x-10)) $\newline
+$ (x+4)(x+2) = (x-1)(x-10) $\newline
+$ x^2+2x+4x+8 = x^2-10x-x+10 $\newline
+$ \cancel{x^2}+6x+8 = \cancel{x^2}-11x+10 $\newline
+$ 6x+8 = -11x+10 $\newline
+$ 17x = 2 $\newline
+$ x = \frac{2}{17} $\newline
+$ lg(x-1) $ och $ lg(x-10) $ ej det, när $ x=\frac{2}{17} $ uppgiften saknar lösningar.
+\subsubsection{EX5}
+Jordens folkmängd var år 2008 6,68 miljarder. Tillväxten var då $ 1,2\% $ per år.
+\begin{enumerate}
+  \item Ställ upp en formel som ger jordens folkmängd om vi antar att den årliga procentuella ökningen ej ändras.\newline
+  $ y=6,68*10^9*1,012^x $\newline
+  x är anta år efter 2008. y är folkmängden x antal år efter 2008
+  \item När är folkmängden 9 miljarder enligt denna modell?\newline
+  $ 9*10^9 = 6,68*10^9*1,012^x $\newline
+  $ 9*\cancel{10^9} = 6,68*\cancel{10^9}*1,012^x $\newline
+  $ \frac{9}{6,68} = 1,012^x $\newline
+  $ lg(\frac{9}{6,68}) = lg1,012^x $\newline
+  $ lg(\frac{9}{6,68} = xlg1,012 $\newline
+  $ x = \frac{lg(9/6,68)}{lg1,012} = 24,99 $\newline
+  Svar: År 2033 är folkmängden på jorden 9 miljarder.
+  \subsubsection{EX6}
+  I en kärnreaktor bildas bland annat plutonium-239 med en halveringstid på 24000 år.
+  \begin{enumerate}
+    \item Ställ upp och berätta hur mycket av 400 mg plutonium-239 finns kvar efter 100000 år.\newline
+    $ 400*0,5^{x/24000} $\newline
+    x är antalet år efter sönderfallets början. y är mängden plutonium-239 efter x är
+    $ y = 400*0,5^{x/24000} $\newline
+    $ y(100000) = 400*0,5^{100000/24000}\approx22mg $
+    Svar: Det är 22 mg plutonium-239 kvar efter 100000 år.
+  \end{enumerate}
 
-
+\end{enumerate}
 \end{flushleft}
 \end{document}

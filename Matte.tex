@@ -1,6 +1,6 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage{lmodern}
 \usepackage{amssymb}
 \usepackage{amsmath}
@@ -9,6 +9,10 @@
 \usepackage{cancel}
 \usepackage{enumitem}
 \usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{pstricks}
+\usepackage{epsfig}
+\usepackage{pst-grad} % For gradients
+\usepackage{pst-plot} % For axes
 
 
 \title{Matte}
@@ -377,5 +381,45 @@ DE är paralell med AB. Bestäm $y$(sträckan CE)
 $ \frac{3,0}{5,0} = \frac{y}{6,0} $\newline
 $ y = \frac{3,0*6,0}{5,0} = 3,6cm$\newline
 Svar: $ y = 3,6cm $
+\section{Föreläsning 14}
+\includegraphics{trigonometri.eps}\newline
+$ \frac{a}{b} = \frac{x}{y} $\newline
+$ \frac{a}{b} = \frac{motstående katet}{närliggande katet} = \tan v $(uttalas "tangens" v)\newline
+Räknaren måste vara inställd på "degree" i mode.\newline
+\subsection{Uppgifter}
+\subsubsection{EX1}
+$ \frac{motstående katet}{närliggande katet} = \tan v $\newline
+$ motstående katet = \tan v * närliggande katet $\newline
+$ x = 15,0*\tan 38° $\newline
+$ x \approx 12 $\newline\newline
+Svar: Sidan x är 12cm.
+\subsubsection{EX2}
+Bestäm y\newline
+$ \tan 28° = \frac{z}{18} $\newline
+$ \tan 36° = \frac{y+z}{18} $\newline
+$ y+x 0 18 \tan 36° $\newline
+$ y = 18 \tan 36°-z = 18 \tan 36° - 18 \tan 28° \approx 3,5 $\newline\newline
+Svar: Sidan y är 3,5 cm.
+\subsubsection{EX3}
+\includegraphics{trigonometri2.eps}\newline
+
+
+
+Skriv in från mobil bild.
+\subsubsection{EX4}
+Skriv in från mobil bild.
+\subsubsection{EX5}
+$ \sin 45° = \frac{a}{26} $\newline
+$ a = 26*\sin 45° $\newline
+$ \sin 35° = \frac{a}{x} $\newline
+$ x = \frac{a}{sin35°} = \frac{26\sin 45°}{\sin 35°} \approx 32cm $\newline
+Svar Sidan x är 32cm
+\subsubsection{EX6}
+Bestäm $ \sin u, \sin v, \cos u, \cos v $ . Ser vi något samband?\newline
+$ \sin u = \frac{12}{27} $\newline
+$ \sin v = \frac{\sqrt{585}}{27} $\newline
+$ \cos u = \frac{\sqrt{585}}{27} $\newline
+$ \cos v = \frac{12}{27} $\newline
+$ v+u = 90°$\newline$ v = 90°-u $\newline$ \sin u = \cos v = \cos(90°-u)$\newline$ \sin v = \cos u = \cos(90°-v) $
 \end{flushleft}
 \end{document}

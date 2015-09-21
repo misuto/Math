@@ -13,6 +13,9 @@
 \usepackage{epsfig}
 \usepackage{pst-grad} % For gradients
 \usepackage{pst-plot} % For axes
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 
 
 \title{Matte}
@@ -421,5 +424,19 @@ $ \sin v = \frac{\sqrt{585}}{27} $\newline
 $ \cos u = \frac{\sqrt{585}}{27} $\newline
 $ \cos v = \frac{12}{27} $\newline
 $ v+u = 90°$\newline$ v = 90°-u $\newline$ \sin u = \cos v = \cos(90°-u)$\newline$ \sin v = \cos u = \cos(90°-v) $
+\section{Föreläsning 15}
+Medelvärde: Addera alla värden och dividera med antalet värden.\newline
+Medianvärde: Storleksordna alla värden, välj det mittersta värdet.\newline
+Typvärde: Det värde som förekommer flest gånger.\newline
+\subsection{Uppgifter}
+\subsubsection{EX1}
+\begin{enumerate}
+  \item Dygnets maxtemperatur under en sommarvecka var $24,28,27,24,25,30,24$\newline
+  Bestäm medelvärde , median och typvärde.\newline
+  Medelvärde: $ \frac{24+28+27+24+25+30+24}{7} = \frac{182}{7} = 26 $\newline
+  Median:  24,24,24,\circled{25},27,28,30  median = $25$\newline
+  Typvärde: Förekommer 3 gånger.\newline
+\end{enumerate}
+
 \end{flushleft}
 \end{document}

@@ -521,7 +521,152 @@ y=-x+7\newline
 Genom att rita upp båda linjerna i samma koordinatsystem med hjälp av grafritaren. \newline
 <bild på detta>\newline
 
+\section{Föreläsning 17}
+Att lösa ekvationssytem med subtitutionsmetoden.\newline
+Även att det går att lösa ett ekvationssystem genom att rita en graf och räkna utifrån det. Problemet blir när k är ett decimalvärde, det blir svårt att räkna.
+Då kan man använda subtitutionsmetoden som går ut på att man bryter ut variablerna. Denna lösning använder 5 steg.
+\begin{enumerate}
+  \item Bryt ut x eller y
+  \item Ersätter x eller y med 1.
+  \item Löser ekvationen
+  \item Räknar ut värdet på den andra variablen
+  \item Skriv svar
+\end{enumerate}
+\subsection{Uppgifter}
+\subsubsection{EX1}
+\[
+\begin{cases}
+_1  y-3z=-2\\
+_2  y=4-2x
+\end{cases}
+\]
+I den andra ekvationen så är y redan utbruten (y står ensamt), vi sätter in y:s värde i den första ekvationen. (subtitueras)
 
+$y-3x=-2$\newline
+$\underbrace{4-2x}_{\text{y värde}}-3x=-2$\newline
+$4-5x=-2$\newline
+$\underbrace{4+2=5x}_{\text{Flyttar 2 och 5x}}$\newline
+$x=\frac{6}{5}$
+
+Nu när vi vet x så kan vi lösa ut y med hjälp av den andra ekvationen
+$y = 4-2x$\newline
+$y = 4-2*\frac{6}{5}$\newline
+$y = 4 - \frac{12}{5}$\newline
+$\underbrace{y = \frac{20}{5}-\frac{12}{5}}_{\text{Gör om 4 till bråktal}}$\newline
+$y = \frac{8}{5}$
+
+Svar;
+\[
+\begin{cases}
+x = \frac{6}{5}\\
+y = \frac{8}{5}
+\end{cases}
+\]
+
+\subsubsection{EX2}
+Lös ekvationssystemet
+\[
+\begin{cases}
+_1  3y-4z=17\\
+_2  y-5z=2
+\end{cases}
+\]
+Den andra ekvationen är lättare att bryta ut då vi har 1y.
+
+$y-5z=2$\newline
+$y = 5z+2$
+
+Nu när vi vet z så kan vi lösa ut y med hjälp av den första ekvationen
+$3y-4z=17x$\newline
+$3(5z+2)-4z=17$\newline
+$15z+6-4z=17$\newline
+$\underbrace{11z=11}_{\text{Flyttar 6 och förenklar}}$\newline
+$z = 1$
+
+Nu ska vi använda andra ekvationen och använda z = 1 för att lösa.
+$y = 5z+2$\newline
+$y = 5(1)+2$\newline
+$y = 7$\newline
+
+Svar;
+\[
+\begin{cases}
+z = 1\\
+y = 7
+\end{cases}
+\]
+
+\subsubsection{EX3}
+Lös ekvationssystemet
+\[
+\begin{cases}
+_1  x+3y+3=0\\
+_2  x-3y+2=0
+\end{cases}
+\]
+Vi börjar med att bryta ut x ur den andra ekvationen.
+
+$x-3y+2=0$\newline
+$x=3y-2$
+
+Nu när vi vet x så kan vi lösa ut y med hjälp av den första ekvationen
+$x+3y+3=0x$\newline
+$3y-2+3y+3=0$\newline
+$6y+1=0$\newline
+$y = -\frac{1}{6}$
+
+Nu ska vi använda andra ekvationen och sätta in värdet på y i x=3y-2.
+$x=3y-2$\newline
+$x=2(-\frac{1}{6})-2$\newline
+$x=-\frac{3}{6}-2$
+$\underbrace{x = -\frac{3}{6}-\frac{12}{6}}_{\text{Gör om 2 till bråktal}}$\newline
+$x = -\frac{3}{6}-\frac{12}{6} = -\frac{5}{2}$\newline
+
+Svar;
+\[
+\begin{cases}
+x = -\frac{5}{2}\\
+y = -\frac{1}{6}
+\end{cases}
+\]
+
+\subsubsection{EX3}
+Lös ekvationssystemet
+\[
+\begin{cases}
+_1 \frac{x}{2}+4y=35\\
+_2 2x+\frac{y}{4}=14
+\end{cases}
+\]
+Vi börjar med att bryta ut x ur den första ekvationen.
+
+$\frac{x}{2}+4y=35$\newline
+$\underbrace{x = -\frac{x}{2}+4y=35}_{\text{Multiplicera med 2}}$\newline
+$x+8y=70$
+$x=70-8y$
+
+Nu när vi vet x så kan vi lösa ut y med hjälp av den andra ekvationen
+$2x+\frac{y}{4}=14$\newline
+$2(70-8y)+\frac{y}{4}=14$\newline
+$\underbrace{140-16y+\frac{y}{4}=14}_{\text{Multiplicera med 4}}$\newline
+$560-64y+y=56$\newline
+$63y=504$\newline
+$y=\frac{504}{63}=8$
+
+Nu ska vi använda andra ekvationen och sätta in värdet på y i x=70-8y.
+$x=70-8y$\newline
+$x=70-8(8)$\newline
+$x=70-64$\newline
+$x=8$
+
+
+Svar;
+\[
+\begin{cases}
+x = 8\\
+y = 8
+\end{cases}
+\]
 
 \end{flushleft}
 \end{document}
